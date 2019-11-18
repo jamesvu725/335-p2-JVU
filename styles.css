@@ -1,0 +1,11 @@
+/* James Vu
+james.vu725@csu.fullerton.edu
+Provide basic css for body and canvas color */
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+canvas {
+  background-color: grey;
+}

@@ -1,0 +1,28 @@
+<!-- James Vu
+james.vu725@csu.fullerton.edu
+Sets up html page to view Asgwilanga Caverns
+Calls the functions for navigating through blue causeways -->
+<!doctype html><html><head>
+<title>Project 2 Asgwilanga Caverns</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body><h1>Project 2 Asgwilanga Caverns</h1>
+<h2>Blue Causeways</h2>
+<h4>CS 335-05 Team: JVU</h4>
+<canvas id="grid" width="300" height="6500"></canvas>
+</body>
+
+<script src="causeway.js"></script>
+<script src="draw_stuff.js"></script>
+
+<script>
+  const canvas = document.getElementById( "grid" );
+  const context = canvas.getContext( "2d" );
+  const roomid = [16, 0, 0];
+  const delay = 1000;
+  const room_counter = 0;
+  const min_res = get_min_residue();
+  update(context, delay, roomid, roomid, room_counter, min_res);
+</script>
+</html>
