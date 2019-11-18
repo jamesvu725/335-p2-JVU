@@ -43,12 +43,12 @@ function check_zero_or_max(id1, id2, id3) {
 function get_min_residue() {
   let min_res = 32;
   let cur_res = 32;
-  let id3;
+  let id1;
   // tries all combination of rooms fulfilling rules requirements
-  for (let id1 = 0; id1 <= 16; ++id1) {
+  for (let id3 = 0; id3 <= 7; ++id3) {
     for (let id2 = 0; id2 <= 8; ++id2) {
-      id3 = get_last_id(id1, id2);
-      if (id3 > 7 || id3 < 0) { continue; }
+      id1 = get_last_id(id3, id2);
+      console.log(id1, id2, id3);
       if (check_zero_or_max(id1, id2, id3)) {
         cur_res = calc_residue(id1, id2, id3);
         min_res = Math.min(cur_res, min_res);
